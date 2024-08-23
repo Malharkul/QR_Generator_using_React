@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+ body {
+  text-align: center;
+   background-color: #1b2034;
+   color: #fff
+}
+.app{
+  padding: 2rem 1rem ;
+
+}
+h1{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+input{
+  appearance: none;
+  outline: none;
+  border: none;
+  background:#fff ;
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  
+}
+/* button,a{
+  appearance: none;
+  outline: none;
+  border: none;
+  background:none ;
+  cursor: pointer;
+  color: #2bcb4b;
+  font-size: 1.2rem;
+  line-height: 1;
+  text-decoration: none;
+} */
+/* Reset default button styles */
+button, a {
+  appearance: none;
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Style for buttons */
+button {
+  background: linear-gradient(45deg, #2bcb4b, #1c8d2f);
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background: linear-gradient(45deg, #1c8d2f, #2bcb4b);
+  transform: scale(1.05);
+}
+
+/* Style for links */
+a {
+  background: linear-gradient(45deg, #2bcb4b, #1c8d2f);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  display: inline-block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for links */
+a:hover {
+  background: linear-gradient(45deg, #1c8d2f, #2bcb4b);
+  transform: scale(1.05);
+}
+
+img{
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  margin: 2rem auto;
+
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.qr-code {
+  animation: pulse 1.5s infinite;
+}
